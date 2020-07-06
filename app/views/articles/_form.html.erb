@@ -1,0 +1,5 @@
+<%= bootstrap_form_for(@article, class: 'form') do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_field :content, data: {editor: 'markdown'}, rows: 10 %>
+  <%= f.submit %>
+<% end %>
